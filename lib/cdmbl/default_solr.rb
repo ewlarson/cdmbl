@@ -26,10 +26,14 @@ module CDMBL
     end
 
     def add(records)
+      puts "Solr: Adding records"
+      puts "Solr: #{connection}"
       connection.add records
     end
 
     def delete(ids)
+      puts "Solr: Deleting records"
+      puts "Solr: #{connection}"
       connection.delete_by_id ids
     end
   end

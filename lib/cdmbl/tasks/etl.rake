@@ -11,7 +11,7 @@ namespace :cdmbl do
     CDMBL::ETLWorker.new.perform(
       'solr_config' => {:url=>"http://localhost:8983/solr/blacklight-core"},
       'oai_endpoint' => 'http://cdm16022.contentdm.oclc.org/oai/oai.php',
-      'cdm_endpoint' => 'https://cdm16022.contentdm.oclc.org/dmwebservices/index.php',
+      'cdm_endpoint' => 'https://server16022.contentdm.oclc.org/dmwebservices/index.php',
       'set_spec' => 'mpls',
       'batch_size' => 10,
       'max_compounds' => 10

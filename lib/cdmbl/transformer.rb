@@ -23,7 +23,9 @@ module CDMBL
     end
 
     def records
-      raw_records.map { |record| to_solr(record) }.compact
+      records = raw_records.map { |record| to_solr(record) }.compact
+      puts "RECORDS: #{records.inspect}"
+      records
     end
 
     private

@@ -28,7 +28,8 @@ Gem::Specification.new do |spec|
   # independently from a rails app
   spec.add_dependency 'activesupport', '>= 4.2'
 
-  spec.add_development_dependency 'bundler', '~> 1.12'
+  spec.add_development_dependency 'bundler', '~> 2.0'
+  spec.add_development_dependency 'http', '~> 4.3'
   spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
   spec.add_development_dependency 'yard', '~> 0.9.0'

@@ -1,4 +1,5 @@
 require 'contentdm_api'
+require 'active_support'
 require 'active_support/core_ext/hash/conversions'
 require 'hash_at_path'
 require 'forwardable'

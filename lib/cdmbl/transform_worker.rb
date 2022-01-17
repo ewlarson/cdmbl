@@ -65,6 +65,7 @@ module CDMBL
 
     def transform_and_load!
       puts "CDMBL::TransformWorker - SolrConfig: #{solr_config}"
+      puts "CDMBL::TransformWorker - TransformedRecords: #{transformed_records.size}"
       load_worker_klass.perform_async(transformed_records, [], solr_config)
     end
 

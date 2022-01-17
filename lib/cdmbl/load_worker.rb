@@ -22,6 +22,7 @@ module CDMBL
     end
 
     def load!
+      puts "CDMBL::LoadWorker - load!"
       loader_klass.new(records: records,
                        deletable_ids: deletables,
                        solr_client: solr_client).load!

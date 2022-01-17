@@ -31,7 +31,7 @@ module CDMBL
     private
 
     def solr_client
-      @solr_client ||= solr_klass.new(solr_config)
+      @solr_client ||= solr_klass.new
     end
   end
 end
